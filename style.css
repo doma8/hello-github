@@ -8,7 +8,6 @@ body {
   font-size: 1.6rem;
   font-family: Helvetica, Arial, sans-serif;
 }
-
 /* Layout */
 .grid-container {
   display: grid;
@@ -33,7 +32,8 @@ footer {
   background-color: #203040;
   color: #ffffff;
 }
-/* Common */
+
+
 a {
   text-decoration: none;
 }
@@ -51,32 +51,60 @@ a.brand {
   font-weight: bold;
 }
 .row {
-  display: flex; /*bt5le el klam msh ta7t ba3do */
+  display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; /*bt5ale el msafa mwgoda maben el klmaaat zay cart w watches*/
-  
+  justify-content: space-between;
+  align-items: center;
 }
 .row.center {
-  justify-content: center;  /*make the words in the center*/
-}
- 
-.card{
-border: 0.3rem #c0c0c0 solid;
-background-color: #f8f8f8;
-border-radius: 0.5rem;
-margin:1 rem;
+  justify-content: center;
 }
 
-.card-body{
-padding:1rem;
 
+
+
+
+
+
+/* Image */
+img {
+  border-radius: 0.5rem;
 }
-.h1{
+img.medium {
+  max-width: 29rem;
+  width: 100%;
+}
 
-  padding: 1 rem 0;
+/* Card */
+.card {
+  border: 0.1rem #c0c0c0 solid;
+  background-color: #f8f8f8;
+  border-radius: 0.5rem;
+  margin: 1rem;
+}
+.card-body {
+  padding: 1rem;
+}
+.card-body > * {
+  margin-bottom: 0.5rem;
+}
+.price {
+  font-size: 2rem;
+}
+/* Rating */
+.rating span {
+  color: #f0c040;
+  margin: 0.1rem;
+}
+
+
+
+/* Common */
+h1 {
+  font-size: 1.8rem;
+  padding: 1rem 0;
+}
+h2 {
   font-size: 1.6rem;
-}
-.rating{
-
-  color: #d4af37;
+  padding: 1rem 0;
 }
